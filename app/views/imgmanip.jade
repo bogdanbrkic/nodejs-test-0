@@ -1,0 +1,23 @@
+//- index.jade
+extends ./layout.jade
+
+block title
+  title Image manipulation - head title
+
+block content
+  section.section
+    div.container
+      div.row
+        nav
+          a(href='/') Home page
+          a(href='/about') About page
+          a(href='/imgmanip') Image manipulation
+      div.row
+        div.column
+          h1 Image manipulation Page    
+      div.row
+        div.one-half.column  
+          img(width='100%' src='images/demo-manip.jpg')
+        div.one-half.column    
+          img(width='100%' src='images/demo-manip-res.jpg')
+          
