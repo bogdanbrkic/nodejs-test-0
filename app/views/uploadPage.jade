@@ -1,0 +1,21 @@
+//- upload img
+extends ./layout.jade
+
+block title
+  
+block content
+  section.section
+  div.container
+    div.row
+      nav
+        a(href='/') Home page
+        a(href='/about') About page
+        a(href='/imgmanip') Image manipulation
+    div.row
+      div.column
+      h2= title
+      form#fileUpload(method="post" action="/uploads/upload" enctype="multipart/form-data") 
+        label(for="payload") Select a file to upload:     
+        input#payload(type="file" name="myFile" accept="image/*") 
+        br 
+        button#upload Upload
